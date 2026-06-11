@@ -93,27 +93,6 @@ nav {
   color: var(--white-pure);
 }
 
-.nav-list {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-.nav-list a {
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--muted);
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  transition: color 0.25s, background 0.25s;
-}
-
-.nav-list a:hover {
-  color: var(--white-pure);
-  background: rgba(255, 255, 255, 0.05);
-}
-
 /* ============================================================
    HERO / #sobre
    ============================================================ */
@@ -124,7 +103,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 11rem 4rem 6rem;
+  padding: 11rem 2rem 6rem;
   position: relative;
   z-index: 1;
   background: var(--bg);
@@ -178,7 +157,7 @@ nav {
 
 #sobre h1 {
   font-family: var(--font-title);
-  font-size: clamp(3.5rem, 6.5vw, 5.8rem);
+  font-size: clamp(2.5rem, 6.5vw, 5.8rem);
   font-weight: 800;
   line-height: 1.12;
   margin-bottom: 2rem;
@@ -303,7 +282,7 @@ section:not(#sobre) {
 
 .section-title {
   font-family: var(--font-title);
-  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
   font-weight: 800;
   color: var(--white-pure);
   margin-bottom: 4rem;
@@ -314,7 +293,7 @@ section:not(#sobre) {
    ============================================================ */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
 }
 
@@ -414,7 +393,7 @@ section:not(#sobre) {
    ============================================================ */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -471,7 +450,7 @@ section:not(#sobre) {
    ============================================================ */
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
   width: 100%;
   max-width: 1200px;
@@ -556,7 +535,7 @@ section:not(#sobre) {
    FOOTER INFO
    ============================================================ */
 footer {
-  padding: 8rem 6rem 4rem;
+  padding: 8rem 2rem 4rem;
   border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -583,7 +562,7 @@ footer {
 
 .footer-name {
   font-family: var(--font-title);
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 800;
   color: var(--white-pure);
   margin-bottom: 0.6rem;
@@ -602,8 +581,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  font-size: 1.3rem;
+  gap: 1rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
   font-weight: 700;
   margin-bottom: 2.5rem;
 }
@@ -763,32 +742,11 @@ footer {
 }
 
 /* ============================================================
-   RESPONSIVIDADE
+   MEDIA QUERIES DE AJUSTE ADICIONAL
    ============================================================ */
 @media (max-width: 1024px) {
-  #sobre {
-    padding: 10rem 2rem 6rem;
-  }
-  #sobre h1 {
-    font-size: clamp(2.8rem, 7vw, 4.2rem);
-  }
-  .hero-desc {
-    font-size: 1.05rem;
-    margin-bottom: 2.5rem;
-  }
   section:not(#sobre) {
-    padding: 5rem 3rem;
-  }
-  .portfolio-grid,
-  .skills-grid,
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  .project-card {
-    height: 320px;
-  }
-  footer {
-    padding: 5rem 3rem 3rem;
+    padding: 6rem 3rem;
   }
 }
 
@@ -810,5 +768,8 @@ footer {
 @media (max-width: 600px) {
   nav {
     padding: 1rem;
+  }
+  section:not(#sobre) {
+    padding: 5rem 1.5rem;
   }
 }
