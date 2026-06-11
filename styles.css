@@ -103,7 +103,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 11rem 2rem 6rem;
+  padding: 11rem 4rem 6rem;
   position: relative;
   z-index: 1;
   background: var(--bg);
@@ -289,11 +289,11 @@ section:not(#sobre) {
 }
 
 /* ============================================================
-   PORTFÓLIO / #portfolio
+   PORTFÓLIO / #portfolio (Forçado estritamente a 2 colunas fixas)
    ============================================================ */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr; /* Mantém exatamente 2 cards por linha no Desktop */
   gap: 2.5rem;
 }
 
@@ -393,7 +393,7 @@ section:not(#sobre) {
    ============================================================ */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -742,7 +742,7 @@ footer {
 }
 
 /* ============================================================
-   MEDIA QUERIES DE AJUSTE ADICIONAL
+   RESPONSIVIDADE (Media Queries com quebra controlada para 1 coluna)
    ============================================================ */
 @media (max-width: 1024px) {
   section:not(#sobre) {
@@ -753,6 +753,9 @@ footer {
 @media (max-width: 900px) {
   nav {
     padding: 1.2rem 2rem;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Quebra para 1 coluna em Tablets e Celulares, impedindo esmagamento */
   }
   .sidebar {
     top: 4.8rem;
