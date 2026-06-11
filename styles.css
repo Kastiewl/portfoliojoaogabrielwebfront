@@ -293,7 +293,7 @@ section:not(#sobre) {
    ============================================================ */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Mantém exatamente 2 cards por linha no Desktop */
+  grid-template-columns: 1fr 1fr; /* Força exatamente 2 colunas simétricas em Desktop */
   gap: 2.5rem;
 }
 
@@ -742,7 +742,7 @@ footer {
 }
 
 /* ============================================================
-   RESPONSIVIDADE (Media Queries com quebra controlada para 1 coluna)
+   RESPONSIVIDADE CONTROLA A COLUNA UNICA APENAS EM PROPORÇÃO ABAIXO DE 900PX
    ============================================================ */
 @media (max-width: 1024px) {
   section:not(#sobre) {
@@ -755,7 +755,7 @@ footer {
     padding: 1.2rem 2rem;
   }
   .portfolio-grid {
-    grid-template-columns: 1fr; /* Quebra para 1 coluna em Tablets e Celulares, impedindo esmagamento */
+    grid-template-columns: 1fr; /* Perfeitamente adaptável para 1 coluna apenas em mobile/tablets */
   }
   .sidebar {
     top: 4.8rem;
