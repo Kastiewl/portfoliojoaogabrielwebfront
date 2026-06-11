@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Gabriel - Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">João Gabriel</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0" width="30" height="4" rx="2" fill="currentColor"/>
+        <rect y="10" width="30" height="4" rx="2" fill="currentColor"/>
+        <rect y="20" width="30" height="4" rx="2" fill="currentColor"/>
+      </svg>
+    </button>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">JG</span>
+      <button class="sidebar-close" id="closeBtn" aria-label="Fechar menu">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#sobre" class="sidebar-link active">Sobre</a></li>
+        <li><a href="#portfolio" class="sidebar-link">Portfólio</a></li>
+        <li><a href="#skills" class="sidebar-link">Skills</a></li>
+        <li><a href="#contato" class="sidebar-link">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section id="sobre">
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <img src="images/joaogabriel.jpeg" alt="João Gabriel">
+      </div>
+
+      <span class="hero-tag">Estudante de ADS · UNIT</span>
+      <h1>Olá, eu sou<br><span class="name">João Gabriel</span></h1>
+      <p class="hero-desc">
+        Desenvolvedor em formação (ADS), com vivência em desenvolvimento web e automação. 
+        Minha base técnica compreende <strong>HTML5, CSS3, JavaScript, Bootstrap e Python</strong>. 
+        Focado na entrega de soluções digitais otimizadas, combino técnicas de <strong>UI/UX</strong> 
+        com boas práticas de versionamento (<strong>Git</strong>) para garantir a qualidade 
+        e a manutenção de sistemas. Sempre atento às melhores práticas de mercado para elevar 
+        o nível das entregas em projetos tecnológicos.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="primary-btn">Ver projetos <span>↓</span></a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://instagram.com/joaogabrielso_" class="social-icon" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/joão-gabriel-souza-de-oliveira-032487228/" class="social-icon" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Kastiewl" class="social-icon" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="fade-section">
+    <p class="section-label">Projetos</p>
+    <h2 class="section-title">Meu Portfólio</h2>
+    <div class="portfolio-grid">
+
+      <div class="project-card project-lampada">
+        <div class="project-overlay-content">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Projeto Lâmpada</h3>
+          <p class="project-desc">Um projeto simples de uma lâmpada que reage a interação com o mouse de click acendendo e apagando. Ao interagir com a lâmpada, o fundo da página muda de escuro para amarelo. Exploração de manipulação com eventos DOM, manipulação de atributos e troca dinâmica de imagens utilizando o JavaScript.</p>
+          <a href="#" class="project-link">Projeto local</a>
+        </div>
+      </div>
+
+      <div class="project-card project-calculadora">
+        <div class="project-overlay-content">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <h3 class="project-title">Calculadora</h3>
+          <p class="project-desc">Calculadora funcional com interface moderna e fonte digital inspirada em displays eletrônicos. Possui operações matemáticas básicas, suporte completo ao uso do teclado e interação por cliques. Desenvolvida com Bootstrap para o layout e JavaScript puro para toda a lógica de funcionamento.</p>
+          <a href="#" class="project-link">Projeto local</a>
+        </div>
+      </div>
+
+      <div class="project-card project-tarefas">
+        <div class="project-overlay-content">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Lista de Tarefas</h3>
+          <p class="project-desc">Aplicativo de lista de tarefas (To-Do List) que permite adicionar e remover atividades de forma simples e intuitiva. Utiliza o localStorage para armazenar os dados localmente, garantindo que as tarefas permaneçam salvas mesmo após o fechamento ou atualização do navegador.</p>
+          <a href="#" class="project-link">Projeto local</a>
+        </div>
+      </div>
+
+      <div class="project-card project-par-impar">
+        <div class="project-overlay-content">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Jogo de Par ou Ímpar</h3>
+          <p class="project-desc">Jogo de Par ou Ímpar totalmente executado por meio de caixas de diálogo do JavaScript. O jogador escolhe entre ímpar ou par, informa um número e enfrenta o computador, que gera um valor aleatório a cada rodada. O projeto explora lógica de programação, validação de dados e geração de números aleatórios.</p>
+          <a href="#" class="project-link">Projeto local</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="fade-section">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">Tecnologias e Habilidades</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <img src="images/html5.png" alt="HTML5">
+        <span class="skill-card-name">HTML5</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/css3.png" alt="CSS3">
+        <span class="skill-card-name">CSS3</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/js.png" alt="JavaScript">
+        <span class="skill-card-name">JavaScript</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/bootstrap.png" alt="Bootstrap">
+        <span class="skill-card-name">Bootstrap</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/python.png" alt="Python">
+        <span class="skill-card-name">Python</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/github.png" alt="Git & GitHub">
+        <span class="skill-card-name">Git & GitHub</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/uiuxdesign.png" alt="UI/UX Design">
+        <span class="skill-card-name">UI/UX Design</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contato" class="fade-section">
+    <div class="footer-header">
+      <p class="section-label">Me contate</p>
+      <h2 class="section-title">Contato</h2>
+    </div>
+
+    <div class="contact-container">
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="formNome">Nome</label>
+          <input type="text" id="formNome" placeholder="Seu nome completo">
+        </div>
+        <div class="form-group">
+          <label for="formEmail">E-mail</label>
+          <input type="email" id="formEmail" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="formMensagem">Mensagem</label>
+          <textarea id="formMensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62664.31688647065!2d-37.108502598816914!3d-10.992147363945419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3a30eb6a7c3%3A0x10348722aa4555f!2sAracaju%20-%20SE!5e0!3m2!1spt-BR!2sbr!4v1717912345678!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-info-block">
+      <h2 class="footer-name">João Gabriel Souza de Oliveira</h2>
+      <p class="footer-location">Aracaju - SE</p>
+      
+      <div class="footer-contact-line">
+        <a href="https://wa.me/5579981488357" target="_blank" class="footer-contact-link">+55 79 98148-8357</a>
+        <span class="footer-divider">|</span>
+        <a href="mailto:joaogabriel927012@gmail.com" class="footer-contact-link">joaogabriel927012@gmail.com</a>
+      </div>
+
+      <div class="footer-social-icons">
+        <a href="https://www.linkedin.com/in/joão-gabriel-souza-de-oliveira-032487228/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Kastiewl" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/joaogabrielso_" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-credits">
+      <span class="footer-text">© 2026, Feito por João Gabriel. Todos os direitos reservados.</span>
+      <span class="footer-text">Desenvolvido com HTML, CSS e JavaScript.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
